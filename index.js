@@ -65,14 +65,14 @@ const zooAnimals = [
 
   function animalNames(array){
     /*Your Code Here*/
-  //   const displayNames = [];
-  //  array.forEach(element => {
-  //     displayNames.push(`name: ${element.animal_name}, scientific: ${element.scientific_name}`)
-    // });
+    const displayNames = [];
+   array.forEach(element => {
+      displayNames.push(`name: ${element.animal_name}, scientific: ${element.scientific_name}`)
+    });
   
-    // return displayNames;
+    return displayNames;
   }
-  // console.log("Topic 2 Request 1: ",animalNames(zooAnimals));
+  console.log("Topic 2 Request 1: ",animalNames(zooAnimals));
   
 
   /* 🦁🦁🦁 Request 2: .map() 🦁🦁🦁
@@ -83,13 +83,13 @@ const zooAnimals = [
 
   function lowerCaseNames(array){
     /*Your Code Here*/
-    // const newArray = array.map(function(element){
+    const newArray = array.map(function(element){
       
-    //   return element.animal_name.toLowerCase();
-    // });
-    // return newArray
+      return element.animal_name.toLowerCase();
+    });
+    return newArray
   }
-  // console.log("Topic 2 Request 2 : ", lowerCaseNames(zooAnimals));
+  console.log("Topic 2 Request 2 : ", lowerCaseNames(zooAnimals));
   
   /* 🦁🦁🦁 Request 3: .filter() 🦁🦁🦁
   The zoo is concerned about animals with a lower population count. 
@@ -98,10 +98,10 @@ const zooAnimals = [
 
   function lowPopulationAnimals(array){
     /*Your Code Here*/
-    // const newArray = array.filter(function(element){
-    //   return element.population < 5
-    // })
-    // return newArray
+    const newArray = array.filter(function(element){
+      return element.population < 5
+    })
+    return newArray
   }
   
 
@@ -113,10 +113,10 @@ const zooAnimals = [
 
   function USApop(array){
     /*Your Code Here*/
-    // const totalPopulation = array.reduce(function(acc,item){
-    //   return acc + item.population;
-    // },0)
-    // return totalPopulation;
+    const totalPopulation = array.reduce(function(acc,item){
+      return acc + item.population;
+    },0)
+    return totalPopulation;
   }
   
   
